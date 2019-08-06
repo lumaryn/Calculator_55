@@ -6,7 +6,7 @@ import java.util.Scanner;
     private int y;
     Scanner sc = new Scanner(System.in);
     {
-        System.out.println("Введите два числа:");
+        System.out.println("Введите число:");
     }
     public int getI() {
         return i;

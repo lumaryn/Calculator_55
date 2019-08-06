@@ -5,17 +5,8 @@ import java.util.Scanner;
     private int a;
     Scanner sc = new Scanner(System.in);
 
-
-    public char getCh() {
-        return ch;
-    }
-
-    {
+    protected void setCh() {
         System.out.println("Укажите операцию: + or - or / or *");
-    }
-
-    public void setCh() {
-
         while ((ch != '+') & (ch != '-') & (ch != '/') & (ch != '*')) {
             this.ch = sc.next().charAt(0);
 
@@ -25,28 +16,30 @@ import java.util.Scanner;
         }
     }
 
-     public int getResult(int i, int y, char x)
+     protected int getResult(int i, int y)
      {
-
-         if (x == '+') {
+         if (ch == '+') {
              Add add = new Add();
              int a = add.getA(i, y);
              this.a=a;
          }
-         else if (x == '-') {
+         else if (ch == '-') {
              Subtr subtr = new Subtr();
              int a = subtr.getA(i, y);
              this.a=a;
          }
-         else if (x == '*') {
+         else if (ch == '*') {
              Mult mult = new Mult();
              int a = mult.getA(i, y);
              this.a=a;
          }
-         else if (x == '/') {
+         else if (ch == '/') {
              Div div = new Div();
              int a = div.getA(i, y);
              this.a=a;
+         }
+         else{
+             System.out.println("Произошла неведомая ошибка");
          }
          return a;
      }

@@ -5,43 +5,18 @@ class Calculator {
         num.setI();
         num.setY();
 
-        int num1 = num.getI();
-        int num2 = num.getY();
-
         Operation op = new Operation();
         op.setCh();
-        char x = op.getCh();
-        int a = op.getResult(num1, num2, x);
+        int a = op.getResult(num.getI(), num.getY());
+        System.out.println("result: "+ a);
 
-
-    /*    if (x == '+') {
-            Add add = new Add();
-            int a = add.getA(num1, num2);
-            System.out.println("result "+ a);
+        Continue conti = new Continue();
+        conti.getCont();
+        while (conti.getCont() != 'n' || conti.getCont() != 'n') {
+            Continue contin = new Continue();
+        int c = contin.Again(a);
+        System.out.println("new result: "+ c);
+        a = c;
         }
-        else if (x == '-') {
-            Subtr subtr = new Subtr();
-            int a = subtr.getA(num1, num2);
-            System.out.println("result "+ a);
-        }
-        else if (x == '*') {
-            Mult mult = new Mult();
-            int a = mult.getA(num1, num2);
-            System.out.println("result "+ a);
-        }
-        else if (x == '/') {
-            Div div = new Div();
-            int a = div.getA(num1, num2);
-            System.out.println("result "+ a);
-        }
-
-
-    Operation operation = new Operation();
-    int a = operation.getResult(num1, num2, x);*/
-
-        System.out.println(num1+" "+num2);
-        System.out.println(x);
-        System.out.println("result "+ a);
-
     }
 }
