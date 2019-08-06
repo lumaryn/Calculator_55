@@ -1,2 +1,7 @@
-public class Mult {
+class Mult {
+    public int getA(int i, int y)
+    {
+        int a = i *  y;
+        return a;
+    }
 }

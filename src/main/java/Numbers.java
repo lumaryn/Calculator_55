@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-public class Numbers  {
+ class Numbers  {
 
     private int i;
     private int y;
     Scanner sc = new Scanner(System.in);
     {
-        System.out.println("Введите числа:");
+        System.out.println("Введите два числа:");
     }
-
     public int getI() {
         return i;
     }
     public void setI() {
         this.i = sc.nextInt();
-
     }
-
     public int getY() {
         return y;
     }
