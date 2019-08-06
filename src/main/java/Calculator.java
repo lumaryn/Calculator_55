@@ -11,12 +11,12 @@ class Calculator {
         System.out.println("result: "+ a);
 
         Continue conti = new Continue();
-        conti.getCont();
-        while (conti.getCont() != 'n' || conti.getCont() != 'n') {
+
+        if (conti.getCont() != 'n' | conti.getCont() != 'N') {
             Continue contin = new Continue();
-        int c = contin.Again(a);
-        System.out.println("new result: "+ c);
-        a = c;
+            int c = contin.Again(a);
+            System.out.println("new result: "+ c);
+            a = c;
         }
     }
 }

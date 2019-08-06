@@ -1,11 +1,11 @@
 class Continue extends Operation {
-   private int s;
-   private char cont;
+    private int s;
+    private char cont;
 
 
     public int Again(int a){
 
-        System.out.println("Введите 'Y', если хотите продолжить действия с полученным числом: "+a+"  или 'N'-выход");
+        System.out.println("Введите 'Y', если хотите продолжить действия с полученным числом: "+a+"  или 'N'-обнулить");
 
         char cont = sc.next().charAt(0);
         this.cont = cont;
@@ -19,15 +19,11 @@ class Continue extends Operation {
         }
         else {
             System.out.println("Вы закончили операцию");
-            s=0;
-        }
+             }
         return s;
-
-        }
+    }
 
     public char getCont() {
         return cont;
     }
 }
-
-
